@@ -1,0 +1,12 @@
+# Mengabaikan Kredensial Rahasia
+.env
+
+# Mengabaikan Lingkungan Virtual & Cache
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Mengabaikan Aset Model Machine Learning (Disimpan di Google Drive)
+*.keras
+*.pkl
