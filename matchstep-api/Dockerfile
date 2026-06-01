@@ -1,5 +1,5 @@
-# Menggunakan OS Linux dengan Python 3.10
-FROM python:3.10-slim
+# Menggunakan OS Linux dengan Python 3.11
+FROM python:3.11-slim
 
 # Menentukan folder kerja di dalam server cloud
 WORKDIR /code
