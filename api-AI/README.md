@@ -10,7 +10,7 @@ API ini menerima data **hard skill** dan **soft skill**, kemudian menghasilkan r
 # 📁 Struktur Folder
 
 ```text
-api-api/
+api-ai/
 │
 ├── model-ai/                     # Folder model AI (tidak di-push ke GitHub)
 │   ├── best_model.keras
