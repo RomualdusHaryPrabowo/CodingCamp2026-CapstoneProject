@@ -39,11 +39,35 @@ Dataset mentah awal terdiri dari **8.000 observasi dan 28 atribut**. Dataset ini
 
 ---
 
-## Analitik Visual Dashboard
-Dashboard analitik interaktif yang dikembangkan merangkum berbagai temuan visual untuk memudahkan proses pengambilan keputusan. Visualisasi tersebut meliputi:
+# Dashboard Analitik MatchStep AI
 
+Sebuah *dashboard* interaktif yang dibangun menggunakan **Streamlit** untuk mengeksplorasi dan menganalisis korelasi antara pola keterampilan mahasiswa (berdasarkan *self-assessment*) dengan target spesialisasi karier mereka di bidang Teknologi Informasi (TI).
+
+Dashboard ini merupakan bagian dari proyek **MatchStep AI**, sebuah sistem rekomendasi karier berbasis *Deep Learning* yang dirancang untuk membantu mahasiswa memetakan potensi diri mereka secara presisi.
+
+---
+
+## Fitur Utama
+
+Dashboard ini memvisualisasikan data ke dalam 4 bagian analitik utama:
 * **Indikator Metrik Utama (KPI) & Filter Demografi:** Menampilkan panel parameter dinamis berdasarkan target karier yang dipilih, dilengkapi ringkasan rata-rata skor kompetensi teknis (*coding*) maupun *soft skill*, serta porsi demografi status mahasiswa.
 * **Overview Distribusi Karier:** Memuat metrik proporsional serta *Bar Chart* yang memvisualisasikan sebaran volume mahasiswa pada masing-masing klaster spesialisasi karier di industri teknologi.
 * **Profil Bahasa Pemrograman per Karier:** Menampilkan visualisasi *Heatmap* untuk menyoroti intensitas dan rata-rata penguasaan berbagai bahasa pemrograman yang dipetakan secara matriks terhadap masing-masing peran profesi.
 * **Pemetaan Hard Skill Utama:** Membedah spesifikasi keahlian teknis (seperti pengalaman pengembangan *web*, *software*, dan jaringan) menggunakan *Heatmap* untuk melihat korelasi *skill* dominan pada setiap target karier.
 * **Distribusi Soft Skill Utama:** Menggunakan grafik *Boxplot* untuk membandingkan sebaran skor keterampilan interpersonal (pemecahan masalah, komunikasi, kerja sama). Grafik ini menyoroti perbedaan krusial antara kebutuhan *soft skill* pada kategori peran manajerial/analis berbanding terbalik dengan posisi teknis murni.
+
+
+**Fitur Interaktif:**
+- **Filter Dinamis:** Pengguna dapat memfilter data berdasarkan "Pengalaman Kepemimpinan" dan memilih kombinasi "Target Karier" secara bebas melalui panel *sidebar*.
+- **Grafik Responsif:** Tinggi grafik akan menyesuaikan secara otomatis (*auto-scaling*) berdasarkan jumlah data yang difilter agar teks tetap terbaca dengan jelas.
+
+---
+
+## Teknologi yang Digunakan
+
+- **Python 3.x**
+- **[Streamlit](https://streamlit.io/):** Framework untuk membangun antarmuka *dashboard* web.
+- **[Pandas](https://pandas.pydata.org/):** Manipulasi, prapemrosesan, dan agregasi data (*Data Wrangling*).
+- **[Plotly Express](https://plotly.com/python/):** Pembuatan visualisasi grafik interaktif yang modern.
+
+---
