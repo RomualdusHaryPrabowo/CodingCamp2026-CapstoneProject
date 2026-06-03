@@ -10,3 +10,4 @@ __pycache__/
 # Mengabaikan Aset Model Machine Learning (Disimpan di Google Drive)
 *.keras
 *.pkl
+.gitignore
