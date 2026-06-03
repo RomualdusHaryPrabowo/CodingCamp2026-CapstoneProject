@@ -68,27 +68,108 @@
 ## 📂 Struktur Repositori
 
 ```
-capstone-project-coding-camp-2026/
-├── 📁 frontend/                  # Aplikasi React + Vite (Client-Side)
-│   ├── public/                   # Aset statis
-│   ├── src/                      # Source code React
-│   ├── .env.example              # Template environment variables
-│   ├── .gitignore                # Git ignore rules
-│   ├── index.html                # Entry point HTML
-│   ├── package.json              # Dependencies & scripts
-│   ├── tailwind.config.js        # Konfigurasi Tailwind CSS
-│   ├── vite.config.js            # Konfigurasi Vite bundler
-│   └── ...
-├── 📁 backend/                   # API Gateway Express.js (Server-Side)
-│   ├── prisma/                   # Schema & migrasi database
-│   ├── src/                      # Source code API
-│   ├── .env.example              # Template environment variables
-│   ├── .gitignore                # Git ignore rules
-│   ├── package.json              # Dependencies & scripts
-│   ├── vercel.json               # Konfigurasi deployment Vercel
-│   └── ...
-├── 📄 README.md                  # Dokumentasi utama (file ini)
-└── 📄 .gitignore                 # Git ignore rules (root)
+CodingCamp2026-CapstoneProject/
+├── 📁 api-AI
+│   ├── 📄 .env.example
+│   ├── 📄 Dockerfile
+│   ├── 📄 main.py
+│   ├── 📄 README.md
+│   └── 📄 requirements.txt
+├── 📁 backend-FS
+│   ├── 📁 prisma
+│   │   ├── 📁 migrations
+│   │   │   ├── 📁 20260527060000_matchstep_db
+│   │   │   ├── 📁 20260527060005_add_history_model
+│   │   │   ├── 📁 20260527060010_add_user_model
+│   │   │   ├── 📁 20260527060015_init
+│   │   │   ├── 📁 20260527060020_add_comment_attachments
+│   │   │   ├── 📁 20260527060025_fix_discussion_attachments
+│   │   │   └── 📁 20260530171532_matchstepaibe
+│   │   ├── 📄 schema.prisma
+│   │   └── 📄 seed.js
+│   ├── 📁 src
+│   │   ├── 📁 config
+│   │   │   └── 📄 prisma.js
+│   │   ├── 📁 features
+│   │   │   ├── 📁 discussion
+│   │   │   ├── 📁 history
+│   │   │   └── 📁 recommendation
+│   │   ├── 📁 middleware
+│   │   │   └── 📄 errorHandler.js
+│   │   ├── 📁 utils
+│   │   │   └── 📄 upload.js
+│   │   └── 📄 index.js
+│   ├── 📄 .env.example
+│   ├── 📄 .gitignore
+│   ├── 📄 eslint.config.js
+│   ├── 📄 package-lock.json
+│   ├── 📄 package.json
+│   ├── 📄 prisma.config.js
+│   ├── 📄 README.md
+│   └── 📄 vercel.json
+├── 📁 dataset-DS
+│   ├── 📄 [DS]Rekomendasi_Karir.ipynb
+│   ├── 📄 data_testing.csv
+│   ├── 📄 data_training.csv
+│   ├── 📄 data_validation.csv
+│   ├── 📄 dataset.csv
+│   ├── 📄 dataset_bersih.csv
+│   ├── 📄 Laporan_Rekomendasi_Karir.pdf
+│   └── 📄 README.md
+├── 📁 file-AI
+│   ├── 📁 Dataset
+│   │   └── 📄 new_dataset_bersih.csv
+│   └── 📄 submission_final_capstone_project_tim_ai.ipynb
+├── 📁 file-DS
+│   ├── 📄 dashboard.py
+│   ├── 📄 dataset_bersih.csv
+│   └── 📄 Logo.png
+├── 📁 frontend-FS
+│   ├── 📁 public
+│   │   ├── 📁 cursors
+│   │   │   ├── 📄 cursor-default.svg
+│   │   │   └── 📄 cursor-pointer.svg
+│   │   └── 📄 favicon.svg
+│   ├── 📁 src
+│   │   ├── 📁 api
+│   │   ├── 📁 components
+│   │   │   ├── 📁 background
+│   │   │   ├── 📁 discussion
+│   │   │   ├── 📁 forms
+│   │   │   ├── 📁 history
+│   │   │   ├── 📁 retroui
+│   │   │   └── 📁 ui
+│   │   ├── 📁 contexts
+│   │   │   └── 📄 AuthContext.jsx
+│   │   ├── 📁 lib
+│   │   │   └── 📄 utils.js
+│   │   ├── 📁 pages
+│   │   │   ├── 📄 CareerDetailPage.jsx
+│   │   │   ├── 📄 DiscussionPage.jsx
+│   │   │   ├── 📄 GeneralPredictPage.jsx
+│   │   │   ├── 📄 HistoryPage.jsx
+│   │   │   ├── 📄 KnowsCareerPage.jsx
+│   │   │   ├── 📄 LandingPage.jsx
+│   │   │   ├── 📄 NotFoundPage.jsx
+│   │   │   ├── 📄 SignInPage.jsx
+│   │   │   └── 📄 SignUpPage.jsx
+│   │   ├── 📁 styles
+│   │   │   └── 📄 global.css
+│   │   ├── 📁 utils
+│   │   │   ├── 📄 api.js
+│   │   │   ├── 📄 discussionApi.js
+│   │   │   └── 📄 helpers.js
+│   │   ├── 📄 .DS_Store
+│   │   ├── 📄 App.jsx
+│   │   └── 📄 main.jsx
+│   ├── 📄 .DS_Store
+│   ├── 📄 .env.example
+│   ├── 📄 .gitignore
+│   ├── 📄 components.json
+│   ├── 📄 eslint.config.js
+│   ├── 📄 index.html
+│   └── 📄 jsconfig.json
+└── 📄 README.md
 ```
 
 ---
