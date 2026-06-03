@@ -31,28 +31,28 @@
 - 💬 **Mengelola forum diskusi** komunitas (CRUD discussions)
 - ✅ **Validasi input** secara ketat menggunakan Zod schema
 
-| Informasi | Detail |
-|---|---|
+| Informasi         | Detail                                                                 |
+| ----------------- | ---------------------------------------------------------------------- |
 | 🌐 Production URL | [https://backend.matchstepai.my.id](https://backend.matchstepai.my.id) |
-| 🔗 Frontend URL | [https://matchstepai.my.id](https://matchstepai.my.id) |
-| 📦 Package Name | `matchstep-backend` |
-| 📌 Versi | `1.0.0` |
+| 🔗 Frontend URL   | [https://matchstepai.my.id](https://matchstepai.my.id)                 |
+| 📦 Package Name   | `matchstep-backend`                                                    |
+| 📌 Versi          | `1.0.0`                                                                |
 
 ---
 
 ## 🛠️ Tech Stack & Framework
 
-| Kategori | Teknologi | Versi |
-|---|---|---|
-| Runtime | Node.js | ≥ 18.x |
-| Framework | Express.js | v4.18 |
-| ORM | Prisma | v7.0 |
-| Database | PostgreSQL | Aiven Cloud |
-| Validasi | Zod | v3.22 |
-| HTTP Client | Axios | v1.6 |
-| File Upload | Multer | v2.1 |
-| AI Generatif | @google/generative-ai (Gemini) | v0.24 |
-| Deployment | Vercel Serverless | Latest |
+| Kategori     | Teknologi                      | Versi       |
+| ------------ | ------------------------------ | ----------- |
+| Runtime      | Node.js                        | ≥ 18.x      |
+| Framework    | Express.js                     | v4.18       |
+| ORM          | Prisma                         | v7.0        |
+| Database     | PostgreSQL                     | Aiven Cloud |
+| Validasi     | Zod                            | v3.22       |
+| HTTP Client  | Axios                          | v1.6        |
+| File Upload  | Multer                         | v2.1        |
+| AI Generatif | @google/generative-ai (Gemini) | v0.24       |
+| Deployment   | Vercel Serverless              | Latest      |
 
 ---
 
@@ -88,12 +88,12 @@ backend/
 
 Pastikan sudah terinstall di sistem Anda:
 
-| Software | Versi Minimum | Keterangan |
-|---|---|---|
-| Node.js | ≥ 18.x | [Download](https://nodejs.org/) |
-| npm | ≥ 9.x | Sudah termasuk dalam Node.js |
-| PostgreSQL | Any | Lokal atau cloud (Aiven) |
-| Git | Any | [Download](https://git-scm.com/) |
+| Software   | Versi Minimum | Keterangan                       |
+| ---------- | ------------- | -------------------------------- |
+| Node.js    | ≥ 18.x        | [Download](https://nodejs.org/)  |
+| npm        | ≥ 9.x         | Sudah termasuk dalam Node.js     |
+| PostgreSQL | Any           | Lokal atau cloud (Aiven)         |
+| Git        | Any           | [Download](https://git-scm.com/) |
 
 ### Langkah 1 — Instalasi Dependensi
 
@@ -185,13 +185,13 @@ MATCHSTEP_AI_URL="http://localhost:8000"
 CORS_ORIGIN="http://localhost:5173"
 ```
 
-| Variable | Deskripsi |
-|---|---|
-| `PORT` | Port server (default: `8000`) |
-| `NODE_ENV` | `development` atau `production` |
-| `DATABASE_URL` | Connection string PostgreSQL |
-| `MATCHSTEP_AI_URL` | URL FastAPI AI Service |
-| `CORS_ORIGIN` | URL frontend yang diizinkan |
+| Variable           | Deskripsi                       |
+| ------------------ | ------------------------------- |
+| `PORT`             | Port server (default: `8000`)   |
+| `NODE_ENV`         | `development` atau `production` |
+| `DATABASE_URL`     | Connection string PostgreSQL    |
+| `MATCHSTEP_AI_URL` | URL FastAPI AI Service          |
+| `CORS_ORIGIN`      | URL frontend yang diizinkan     |
 
 ---
 
@@ -199,15 +199,15 @@ CORS_ORIGIN="http://localhost:5173"
 
 ### NPM Scripts
 
-| Perintah | Fungsi |
-|---|---|
-| `npm run dev` | Jalankan server development (nodemon) |
-| `npm start` | Jalankan server production |
-| `npm run build` | Generate Prisma Client |
-| `npm run lint` | Jalankan ESLint |
-| `npm run prisma:migrate` | Jalankan migrasi database |
-| `npm run prisma:studio` | Buka GUI database Prisma Studio |
-| `npm run prisma:seed` | Isi database dengan data contoh |
+| Perintah                 | Fungsi                                |
+| ------------------------ | ------------------------------------- |
+| `npm run dev`            | Jalankan server development (nodemon) |
+| `npm start`              | Jalankan server production            |
+| `npm run build`          | Generate Prisma Client                |
+| `npm run lint`           | Jalankan ESLint                       |
+| `npm run prisma:migrate` | Jalankan migrasi database             |
+| `npm run prisma:studio`  | Buka GUI database Prisma Studio       |
+| `npm run prisma:seed`    | Isi database dengan data contoh       |
 
 ### API Endpoints
 
@@ -281,12 +281,12 @@ postgres://avnadmin:PASSWORD@HOSTNAME:PORT/defaultdb?sslmode=require
 
 ### Troubleshooting
 
-| Masalah | Solusi |
-|---|---|
-| `self-signed certificate` | Ganti `sslmode=verify-full` → `sslmode=require` |
-| `Connection refused` | Pastikan service Aiven statusnya **Running** |
-| `authentication failed` | Cek ulang password di Aiven Console |
-| `prisma generate` gagal | Tambah `"postinstall": "prisma generate"` di `package.json` |
+| Masalah                   | Solusi                                                       |
+| ------------------------- | ------------------------------------------------------------ |
+| `self-signed certificate` | Ganti `sslmode=verify-full` → `sslmode=require`              |
+| `Connection refused`      | Pastikan service Aiven statusnya **Running**                 |
+| `authentication failed`   | Cek ulang password di Aiven Console                          |
+| `prisma generate` gagal   | Tambah `"postinstall": "prisma generate"` di `package.json`  |
 | SSL error saat seed lokal | `$env:NODE_TLS_REJECT_UNAUTHORIZED="0"; node prisma/seed.js` |
 
 ---
@@ -309,24 +309,22 @@ File `vercel.json` sudah dikonfigurasi:
 
 Tambahkan variabel berikut di **Vercel Dashboard → Settings → Environment Variables**:
 
-| Variable | Value |
-|---|---|
-| `NODE_ENV` | `production` |
-| `DATABASE_URL` | _(connection string Aiven)_ |
-| `MATCHSTEP_AI_URL` | _(URL Hugging Face AI service)_ |
-| `CORS_ORIGIN` | `https://matchstepai.my.id` |
-| `GEMINI_API_KEY` | _(API key Gemini, jika digunakan)_ |
+| Variable           | Value                              |
+| ------------------ | ---------------------------------- |
+| `NODE_ENV`         | `production`                       |
+| `DATABASE_URL`     | _(connection string Aiven)_        |
+| `MATCHSTEP_AI_URL` | _(URL Hugging Face AI service)_    |
+| `CORS_ORIGIN`      | `https://matchstepai.my.id`        |
+| `GEMINI_API_KEY`   | _(API key Gemini, jika digunakan)_ |
 
 ---
 
 ## 🤖 Tautan Model AI
 
-Untuk menjalankan AI Service secara lokal, unduh model Machine Learning:
+Untuk menjalankan AI Service secara lokal, unduh model AI berikut:
 
 > [!IMPORTANT]
-> 👉 **[Download Model MatchStep AI](https://drive.google.com/drive/folders/LINK_MODEL_MENYUSUL_DARI_TIM_AI)**
->
-> *(Tautan akan diperbarui oleh Tim AI — hubungi Tim AI jika belum aktif)*
+> 👉 **[Download Model MatchStep AI](https://drive.google.com/drive/folders/12P0FQCN6R_jbyzczULNLsDasKwiR7dYe?usp=sharing)**
 
 ---
 
