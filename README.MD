@@ -9,6 +9,7 @@
 | 🌐 Frontend (Production) | [https://matchstepai.my.id](https://matchstepai.my.id) |
 | ⚙️ Backend API (Production) | [https://backend.matchstepai.my.id](https://backend.matchstepai.my.id) |
 | ⚙️ AI API (Production) | [https://hyporom-matchstep-api.hf.space/](https://hyporom-matchstep-api.hf.space/) |
+| 📊 Dashboard Streamlit | [https://rekomendasi-karir-mahasiswa.streamlit.app/](https://rekomendasi-karir-mahasiswa.streamlit.app/) |
 ---
 
 ## 📑 Daftar Isi
