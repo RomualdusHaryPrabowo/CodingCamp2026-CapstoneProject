@@ -1,0 +1,106 @@
+// This is your Prisma schema file,
+// learn more about idt in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  name      String?
+  avatar    String?
+  googleId  String?  @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Recommendation {
+  id                Int      @id @default(autoincrement())
+  targetCareer      String   @db.VarChar(100)
+  skillsInput       Json // Store as JSON: { "Ruby": 8.5, ... }
+  recommendedCareer String   @db.VarChar(100)
+  confidencePercent Float
+  allPredictions    Json // Store top 5 careers with percentages
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([targetCareer])
+  @@index([createdAt])
+}
+
+model History {
+  id                Int      @id @default(autoincrement())
+  guest_id          String   @db.VarChar(255)
+  hard_skill        Json // Store array of hard skills
+  soft_skill        Json // Store array of soft skills
+  prediction_result String   @db.VarChar(100)
+  probability       Float
+  type              String   @default("GENERAL") @db.VarChar(50)
+  analisis_dinamis  String?  @db.Text
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([guest_id])
+  @@index([createdAt])
+}
+
+// ===== Discussion Feature =====
+
+model Discussion {
+  id             String   @id @default(uuid())
+  authorId       String   @db.VarChar(255) // user email
+  authorName     String   @db.VarChar(255)
+  authorAvatar   String?
+  content        String   @db.Text
+  attachmentUrls String[] // URL paths to uploaded images/gifs
+  hashtags       String[] // Array of tag strings
+
+  likesCount    Int @default(0)
+  dislikesCount Int @default(0)
+
+  comments  Comment[]
+  reactions Reaction[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([authorId])
+  @@index([createdAt])
+}
+
+model Comment {
+  id           String  @id @default(uuid())
+  discussionId String
+  authorId     String  @db.VarChar(255) // user email
+  authorName   String  @db.VarChar(255)
+  authorAvatar String?
+  content      String  @db.Text
+
+  discussion Discussion @relation(fields: [discussionId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@index([discussionId])
+}
+
+model Reaction {
+  id           String       @id @default(uuid())
+  userId       String       @db.VarChar(255) // user email
+  discussionId String
+  type         ReactionType
+
+  discussion Discussion @relation(fields: [discussionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, discussionId])
+  @@index([discussionId])
+}
+
+enum ReactionType {
+  LIKE
+  DISLIKE
+}

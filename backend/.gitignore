@@ -1,0 +1,48 @@
+# ============================================
+# MATCHSTEP AI — Backend .gitignore
+# ============================================
+
+# --- Dependencies ---
+node_modules/
+npm-debug.log
+npm-debug.log*
+yarn-error.log
+yarn-debug.log*
+pnpm-debug.log*
+
+# --- Environment Variables (SENSITIF!) ---
+.env
+.env.local
+.env.production
+.env.staging
+.env.*.local
+
+# --- Build Outputs ---
+dist/
+build/
+
+# --- Database ---
+prisma/migrations/migration_lock.toml
+
+# --- IDE & Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS Generated ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Deployment ---
+.vercel
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Coverage & Testing ---
+coverage/
+.nyc_output/
