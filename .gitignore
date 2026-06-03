@@ -1,6 +1,6 @@
 # Mengabaikan Kredensial Rahasia
 .env
-
+.DS_Store
 # Mengabaikan Lingkungan Virtual & Cache
 venv/
 env/
