@@ -39,7 +39,7 @@ Dataset mentah awal terdiri dari **8.000 observasi dan 28 atribut**. Dataset ini
 
 ---
 
-# Dashboard Analitik MatchStep AI
+## Dashboard Analitik MatchStep AI
 
 Sebuah *dashboard* interaktif yang dibangun menggunakan **Streamlit** untuk mengeksplorasi dan menganalisis korelasi antara pola keterampilan mahasiswa (berdasarkan *self-assessment*) dengan target spesialisasi karier mereka di bidang Teknologi Informasi (TI).
 
@@ -65,7 +65,7 @@ Dashboard ini memvisualisasikan data ke dalam 4 bagian analitik utama:
 
 ## Teknologi yang Digunakan
 
-- **Python 3.x**
+- **Python**
 - **[Streamlit](https://streamlit.io/):** Framework untuk membangun antarmuka *dashboard* web.
 - **[Pandas](https://pandas.pydata.org/):** Manipulasi, prapemrosesan, dan agregasi data (*Data Wrangling*).
 - **[Plotly Express](https://plotly.com/python/):** Pembuatan visualisasi grafik interaktif yang modern.
