@@ -246,11 +246,9 @@ npm run build
 Untuk menjalankan layanan AI secara lokal (opsional), Anda memerlukan file model _Machine Learning_.
 
 > [!IMPORTANT]
-> **Unduh model Machine Learning** (seperti `best_model.keras`, scaler, encoder) melalui tautan berikut:
+> **Unduh model AI** melalui tautan berikut:
 >
-> 👉 **[Download Model MatchStep AI](https://drive.google.com/drive/folders/LINK_MODEL_MENYUSUL_DARI_TIM_AI)**
->
-> *(Tautan akan diperbarui oleh Tim AI — jika tautan belum aktif, hubungi Tim AI)*
+> 👉 **[Download Model MatchStep AI](https://drive.google.com/drive/folders/12P0FQCN6R_jbyzczULNLsDasKwiR7dYe?usp=sharing)**
 >
 > Setelah diunduh, tempatkan file model ke dalam direktori yang sesuai agar dapat dibaca oleh API AI Service.
 
