@@ -1,0 +1,52 @@
+# =============================================
+# MATCHSTEP AI — Frontend .gitignore
+# =============================================
+
+# --- Dependencies ---
+node_modules/
+npm-debug.log
+npm-debug.log*
+yarn-error.log
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Environment Variables (SENSITIF!) ---
+.env
+.env.local
+.env.production
+.env.staging
+.env.*.local
+*.local
+
+# --- Build Outputs ---
+dist/
+dist-ssr/
+build/
+*.zip
+
+# --- IDE & Editor ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+
+# --- OS Generated ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Coverage & Testing ---
+coverage/
+.nyc_output/
