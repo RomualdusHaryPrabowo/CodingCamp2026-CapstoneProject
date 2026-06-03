@@ -78,13 +78,6 @@ CodingCamp2026-CapstoneProject/
 ├── 📁 backend-FS
 │   ├── 📁 prisma
 │   │   ├── 📁 migrations
-│   │   │   ├── 📁 20260527060000_matchstep_db
-│   │   │   ├── 📁 20260527060005_add_history_model
-│   │   │   ├── 📁 20260527060010_add_user_model
-│   │   │   ├── 📁 20260527060015_init
-│   │   │   ├── 📁 20260527060020_add_comment_attachments
-│   │   │   ├── 📁 20260527060025_fix_discussion_attachments
-│   │   │   └── 📁 20260530171532_matchstepaibe
 │   │   ├── 📄 schema.prisma
 │   │   └── 📄 seed.js
 │   ├── 📁 src
@@ -99,8 +92,6 @@ CodingCamp2026-CapstoneProject/
 │   │   ├── 📁 utils
 │   │   │   └── 📄 upload.js
 │   │   └── 📄 index.js
-│   ├── 📄 .env.example
-│   ├── 📄 .gitignore
 │   ├── 📄 eslint.config.js
 │   ├── 📄 package-lock.json
 │   ├── 📄 package.json
@@ -144,15 +135,6 @@ CodingCamp2026-CapstoneProject/
 │   │   ├── 📁 lib
 │   │   │   └── 📄 utils.js
 │   │   ├── 📁 pages
-│   │   │   ├── 📄 CareerDetailPage.jsx
-│   │   │   ├── 📄 DiscussionPage.jsx
-│   │   │   ├── 📄 GeneralPredictPage.jsx
-│   │   │   ├── 📄 HistoryPage.jsx
-│   │   │   ├── 📄 KnowsCareerPage.jsx
-│   │   │   ├── 📄 LandingPage.jsx
-│   │   │   ├── 📄 NotFoundPage.jsx
-│   │   │   ├── 📄 SignInPage.jsx
-│   │   │   └── 📄 SignUpPage.jsx
 │   │   ├── 📁 styles
 │   │   │   └── 📄 global.css
 │   │   ├── 📁 utils
@@ -162,7 +144,6 @@ CodingCamp2026-CapstoneProject/
 │   │   ├── 📄 .DS_Store
 │   │   ├── 📄 App.jsx
 │   │   └── 📄 main.jsx
-│   ├── 📄 .DS_Store
 │   ├── 📄 .env.example
 │   ├── 📄 .gitignore
 │   ├── 📄 components.json
