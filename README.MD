@@ -144,6 +144,7 @@ CodingCamp2026-CapstoneProject/
 │   │   ├── 📄 .DS_Store
 │   │   ├── 📄 App.jsx
 │   │   └── 📄 main.jsx
+|   |   └── 📄 README.md
 │   ├── 📄 .env.example
 │   ├── 📄 .gitignore
 │   ├── 📄 components.json
