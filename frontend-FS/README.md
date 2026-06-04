@@ -258,7 +258,7 @@ VITE_BACKEND_URL="http://localhost:3000"
 Untuk menjalankan AI Service secara lokal, unduh model Machine Learning:
 
 > [!IMPORTANT]
-> 👉 **[Download Model MatchStep AI](https://drive.google.com/drive/folders/LINK_MODEL_MENYUSUL_DARI_TIM_AI)**
+> 👉 **[Download Model MatchStep AI](https://drive.google.com/drive/folders/12P0FQCN6R_jbyzczULNLsDasKwiR7dYe?usp=sharing)**
 >
 > *(Tautan akan diperbarui oleh Tim AI — hubungi Tim AI jika belum aktif)*
 
